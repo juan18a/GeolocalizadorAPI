@@ -22,6 +22,19 @@ const ip = req.headers['x-forwarded-for'] ||
 
 });
 
+app.post('/', (req, res) => {
+
+
+const ip = req.headers['x-forwarded-for'] ||
+ req.connection.remoteAddress;
+
+ const geo = geoip.lookup(ip);
+
+ res.json(geo);
+
+
+
+});
 
 
 app.listen(process.env.PORT || 5000, ()=>{
