@@ -31,6 +31,6 @@ res.send('Your IP is ' + ip);
 
 
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 5000, ()=>{
     console.log("Server port on 3000");
 })
