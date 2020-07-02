@@ -1,25 +1,22 @@
 const express = require('express');
 const app = express();
-var http = require('http');
-var morgan = require('morgan');
+const morgan = require('morgan');
+const geoip = require('geoip-lite');
 
 
 app.use(morgan('combined'))
 
 app.set('trust proxy', true);
+
 app.get('/', (req, res) => {
 
-
-console.dir(req.ips)
 
 const ip = req.headers['x-forwarded-for'] ||
  req.connection.remoteAddress;
 
+ const geo = geoip.lookup(ip);
 
-
- res.send('Your IP is ' + ip);
-
-
+ res.json(geo);
 
 
 
