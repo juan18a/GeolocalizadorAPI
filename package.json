@@ -1,0 +1,34 @@
+{
+  "name": "geolocalidorapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juan18a/GeolocalizadorAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juan18a/GeolocalizadorAPI/issues"
+  },
+  "homepage": "https://github.com/juan18a/GeolocalizadorAPI#readme",
+  "dependencies": {
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "geoip-lite": "^1.4.2",
+    "ipware": "^2.0.0",
+    "leaflet": "^1.6.0",
+    "morgan": "^1.10.0",
+    "public-ip": "^4.0.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
