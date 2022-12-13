@@ -20,7 +20,7 @@
   "homepage": "https://github.com/juan18a/GeolocalizadorAPI#readme",
   "dependencies": {
     "ejs-mate": "^3.0.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "geoip-lite": "^1.4.2",
     "ipware": "^2.0.0",
     "leaflet": "^1.6.0",
